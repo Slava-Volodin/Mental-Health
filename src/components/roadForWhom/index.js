@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import RoadForWhomFooter from './roadForWhomFooter';
+import RoadForWhomFooter from './RoadForWhomFooter';
 
 import Button from '../Button';
 

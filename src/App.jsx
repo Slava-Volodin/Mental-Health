@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import RoadForWhom from './components/RoadForWhom';
-import Education from './components/Education';
+import AboutMe from './components/AboutMe';
 import Questions from './components/Questions';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Hero />
 
       <RoadForWhom />
-      <Education />
+      <AboutMe />
       <Questions />
     </div>
   );
