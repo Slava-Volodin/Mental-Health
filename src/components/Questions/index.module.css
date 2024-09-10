@@ -1,0 +1,19 @@
+.wrapperQuestions {
+  padding-top: 58px;
+  padding-bottom: 97px;
+  display: flex;
+  gap: 20px;
+}
+
+.photoContainer {
+  flex-basis: 40%;
+}
+.listWrapper {
+  flex-basis: 60%;
+}
+.listContainer {
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

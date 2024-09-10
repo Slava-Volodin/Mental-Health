@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import RoadForWhom from './components/roadForWhom';
-import Education from './components/education';
+import RoadForWhom from './components/RoadForWhom';
+import Education from './components/Education';
+import Questions from './components/Questions';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
 
       <RoadForWhom />
       <Education />
+      <Questions />
     </div>
   );
 }

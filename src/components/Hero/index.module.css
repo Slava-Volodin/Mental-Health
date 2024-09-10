@@ -50,6 +50,7 @@
   width: fit-content;
   display: block;
   transform: translate(0, -20px);
+  font-family: 'Montserrat';
 }
 .textContainer {
   padding-right: 290px;
