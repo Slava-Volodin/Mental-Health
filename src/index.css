@@ -8,10 +8,12 @@
   --grey: #adadad;
   --btn-text-color: #fef7f3;
 
+
   --fontFamilyBebas: 'Bebas', system-ui;
   --fontFamilyMontserrat: 'Montserrat', system-ui;
   --fontFamilyMontserratItalic: 'MontserratItalic', system-ui;
-
+  
+  --fontSize-smaller: 14px;
   --fontSize-xxs: 24px;
   --fontSize-xs: 26px;
   --fontSize-s: 28px;
@@ -77,7 +79,8 @@ button {
   background-color: unset;
   cursor: pointer;
   display: block;
-  font-size: var(--fontSize-s);
+  font-size: var(--fnSizes-s);
+  font-family: var(--fontFamilyBebas);
   font-style: normal;
   font-weight: 400;
   line-height: 150%;

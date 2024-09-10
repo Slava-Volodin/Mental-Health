@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { questionsData } from '../../data/questions';
 import QuestionCard from './components/questionCard';
 import classNames from 'classnames';
+import Button from '../Button';
 
 import s from './index.module.css';
 
@@ -18,8 +19,8 @@ export default function Questions() {
 
   return (
     <div className={classNames('container', s.wrapperQuestions)}>
-      <div className={s.photoContainer}>Road to happyness</div>
       <div className={s.listWrapper}>
+        <h2 className={s.titleWrapper}>часті запитання</h2>
         <ul className={s.listContainer}>
           {questions.map((question) => (
             <QuestionCard
@@ -29,6 +30,7 @@ export default function Questions() {
             />
           ))}
         </ul>
+        <Button className={s.btnSignUp} text={<span>Зареєстуватись</span>} />
       </div>
     </div>
   );
