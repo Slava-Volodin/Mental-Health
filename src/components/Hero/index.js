@@ -23,7 +23,7 @@ export default function Hero() {
           <Button className={s.btn} text="Зареєстуватись" />
         </div>
         <div className={s.imgSide}>
-          <img className={s.photo} src={photo} />
+          <img alt="photo_background" className={s.photo} src={photo} />
         </div>
       </div>
       <HeroFooter />
