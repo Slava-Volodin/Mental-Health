@@ -7,15 +7,19 @@
   --black: #000000;
   --grey: #adadad;
   --btn-text-color: #fef7f3;
-  --fontFamilyBebas: 'Bebas Neue', system-ui;
+
+  --fontFamilyBebas: 'Bebas', system-ui;
   --fontFamilyMontserrat: 'Montserrat', system-ui;
+  --fontFamilyMontserratItalic: 'MontserratItalic', system-ui;
+
   --fontSize-xxs: 24px;
   --fontSize-xs: 26px;
   --fontSize-s: 28px;
   --fontSize-m-xs: 40px;
-  --fnSizes-m: 60px;
-  --fnSizes-xl: 100px;
-  --fnSizes-xxl: 104px;
+  --fontSize-m-s: 55px;
+  --fontSize-m: 60px;
+  --fontSize-xl: 100px;
+  --fontSize-xxl: 104px;
   --fontSize-xxxl: 120px;
 
   --fontWeight-s: 400;
@@ -23,6 +27,8 @@
   --fontWeight-xl: 800;
 
   --border: 4px solid #e0e0e0;
+
+  --desktop: 1240px;
 }
 
 * {
@@ -47,14 +53,14 @@
   padding-left: 36px;
   padding-right: 36px;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: var(--desktop);
 }
 
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: var(--fnSizes-s);
+  font-size: var(--fontSize-s);
   font-family: var(--fontFamilyBebas);
   font-style: normal;
   font-weight: var(--fontWeight-s);
@@ -71,9 +77,9 @@ button {
   background-color: unset;
   cursor: pointer;
   display: block;
-  font-size: var(--fnSizes-s);
+  font-size: var(--fontSize-s);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 150%;
 }
 
@@ -118,26 +124,31 @@ img {
 }
 
 h1 {
-  font-size: var(--fnSizes-xxl);
+  font-size: clamp(var(--fontSize-xxl), 5vw, var(--fontSize-xxxl));
 }
+
 h2 {
-  font-size: 55px;
+  font-size: clamp(var(--fontSize-xxl), 6vw, var(--fontSize-xl));
 }
+
 h3 {
-  font-size: var(--fnSizes-sm);
+  font-size: clamp(var(--fontSize-xl), 5vw, var(--fontSize-m));
 }
+
 h4 {
-  font-size: var(--fnSizes-s);
+  font-size: clamp(var(--fontSize-m), 5vw, var(--fontSize-s));
 }
+
 h5 {
-  font-size: var(--fnSizes-xs);
+  font-size: clamp(var(--fontSize-s), 5vw, var(--fontSize-xs));
 }
+
 p {
   margin: 0;
 }
 /* Section */
 .titleSection {
-  font-size: var(--fnSizes-xs);
+  font-size: var(--fontSize-xs);
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -145,17 +156,50 @@ p {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (width <= 1040px) {
   .container {
     padding-right: 48px;
     padding-left: 48px;
   }
+
+  h1 {
+    font-size: clamp(var(--fontSize-xxl), 6vw, var(--fontSize-xl));
+  }
+
+  h2 {
+    font-size: clamp(var(--fontSize-xl), 5vw, var(--fontSize-m));
+  }
+
+  h3 {
+    font-size: clamp(var(--fontSize-m), 5vw, var(--fontSize-s));
+  }
+
+  h4 {
+    font-size: clamp(var(--fontSize-s), 5vw, var(--fontSize-xs));
+  }
 }
 
-@media screen and (max-width: 480px) {
-  .container {
-    padding-right: 20px;
-    padding-left: 20px;
+@media screen and (width <= 768px) {
+  h1 {
+    font-size: clamp(var(--fontSize-xl), 5vw, var(--fontSize-m));
+  }
+
+  h2 {
+    font-size: clamp(var(--fontSize-m), 5vw, var(--fontSize-s));
+  }
+
+  h3 {
+    font-size: clamp(var(--fontSize-s), 5vw, var(--fontSize-xs));
+  }
+}
+
+@media screen and (width <= 480px) {
+  h1 {
+    font-size: clamp(var(--fontSize-m), 5vw, var(--fontSize-s));
+  }
+
+  h2 {
+    font-size: clamp(var(--fontSize-s), 5vw, var(--fontSize-xs));
   }
 }
 

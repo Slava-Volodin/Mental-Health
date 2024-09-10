@@ -2,15 +2,20 @@
   display: flex;
   padding-top: 40px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .photoContainer {
   position: relative;
+  flex-basis: 50%;
 }
 
+.photoContainer > img {
+  width: 100%;
+}
 .photoContainer::after {
   content: 'psychology';
   color: var(--black);
-  font-size: 124px;
+  font-size: clamp(var(--fontSize-xxl), 6vw, var(--fontSize-xl));
   text-transform: uppercase;
   position: absolute;
   bottom: 0;
@@ -19,7 +24,7 @@
 .photoContainer::before {
   content: 'course';
   color: var(--black);
-  font-size: 40px;
+  font-size: var(--fontSize-s);
   position: absolute;
   bottom: 25px;
   right: 45px;
@@ -27,13 +32,13 @@
 
 .textContainer {
   padding-top: 140px;
-  max-width: 500px;
+  flex-basis: 50%;
 }
+
 .title {
-  font-size: var(--fontSize-xxxl);
-  text-transform: uppercase;
-  line-height: 100.8px;
+  font-size: clamp(var(--fontSize-xl), 6vw, var(--fontSize-xxl));
   font-family: var(--fontFamilyBebas);
+  text-transform: uppercase;
   margin-bottom: 12px;
 }
 .description {
@@ -43,3 +48,21 @@
   margin-bottom: 33px;
   display: inline-block;
 }
+.btnSignUp {
+  padding-left: 48px;
+  padding-right: 48px;
+  text-transform: uppercase;
+}
+
+/* || Tablet */
+
+@media screen and (width <= 1240px) {
+  .photoContainer::after {
+    display: none;
+  }
+  .title {
+    font-size: clamp(var(--fontSize-xl), 6vw, var(--fontSize-xl));
+  }
+}
+
+/* ||  Mobile */

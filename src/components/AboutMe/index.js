@@ -1,14 +1,14 @@
 import React from 'react';
 import educationPhoto from '../../images/educationPhoto.png';
+import Button from '../Button';
 import classNames from 'classnames';
 import s from './index.module.css';
-import Button from '../Button';
 
-export default function Education() {
+export default function AboutMe() {
   return (
     <div className={classNames(s.wrapperEducation, 'container')}>
       <div className={s.photoContainer}>
-        <img alt="photo_education" src={educationPhoto} />
+        <img alt="photo_about_me" src={educationPhoto} />
       </div>
       <div className={s.textContainer}>
         <h2 className={s.title}>Костюк Максим</h2>
@@ -20,11 +20,7 @@ export default function Education() {
           роботі використовує сучасні методики та індивідуальний підхід до
           кожного клієнта.
         </span>
-        <Button
-          text={
-            <span style={{ textTransform: 'uppercase' }}>Зареєстуватись</span>
-          }
-        />
+        <Button className={s.btnSignUp} text={<span>Зареєстуватись</span>} />
       </div>
     </div>
   );
