@@ -8,7 +8,7 @@ export default function Education() {
   return (
     <div className={classNames(s.wrapperEducation, 'container')}>
       <div className={s.photoContainer}>
-        <img src={educationPhoto} />
+        <img alt="photo_education" src={educationPhoto} />
       </div>
       <div className={s.textContainer}>
         <h2 className={s.title}>Костюк Максим</h2>

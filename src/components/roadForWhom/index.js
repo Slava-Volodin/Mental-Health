@@ -1,10 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
-import photo from '../../images/road/photoRoad.png';
-
 import RoadForWhomFooter from './roadForWhomFooter';
+
 import Button from '../Button';
 
+import photo from '../../images/road/photoRoad.png';
 import s from './index.module.css';
 
 export default function RoadForWhom() {
@@ -35,7 +35,7 @@ export default function RoadForWhom() {
           />
         </div>
         <div className={s.photoContainer}>
-          <img className={s.photo} src={photo} />
+          <img alt="photo_background" className={s.photo} src={photo} />
         </div>
         <div className={s.rightSide}>
           <span className={classNames(s.subtitle, s.happyness)}>happyness</span>
