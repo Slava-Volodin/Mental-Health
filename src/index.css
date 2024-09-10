@@ -32,9 +32,17 @@
 
 @font-face {
   font-family: 'Bebas';
-  src: url('./fonts/bebasneuecyrillic.ttf');
+  src: url('./fonts/Bebas_Neue_Cyrillic.ttf');
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'MontserratItalic';
+  src: url('./fonts/Montserrat-Italic-VariableFont_wght.ttf');
+}
 .container {
   padding-left: 36px;
   padding-right: 36px;
