@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --orange: #fc6500;
+  --white: #f1f1f1;
+  --dark: #1d1d1b;
+  --black: #000000;
+  --grey: #adadad;
+  --btn-text-color: #fef7f3;
+  --fontFamilyBebas: 'Bebas Neue', system-ui;
+  --fontFamilyMontserrat: 'Montserrat', system-ui;
+  --fontSize-xxs: 24px;
+  --fontSize-xs: 26px;
+  --fontSize-s: 28px;
+  --fontSize-m-xs: 40px;
+  --fnSizes-m: 60px;
+  --fnSizes-xl: 100px;
+  --fnSizes-xxl: 104px;
+  --fontSize-xxxl: 120px;
+
+  --fontWeight-s: 400;
+  --fontWeight-m: 700;
+  --fontWeight-xl: 800;
+
+  --border: 4px solid #e0e0e0;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Bebas';
+  src: url('./fonts/bebasneuecyrillic.ttf');
+}
+
+.container {
+  padding-left: 36px;
+  padding-right: 36px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--fnSizes-s);
+  font-family: var(--fontFamilyBebas);
+  font-style: normal;
+  font-weight: var(--fontWeight-s);
+  color: var(--black);
+  background-color: var(--white);
+}
+
+html {
+  -webkit-tap-highlight-color: var(--black);
+}
+
+button {
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+  display: block;
+  font-size: var(--fnSizes-s);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+body {
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+a {
+  transition: opacity 0.3s;
+  text-decoration: none;
+  color: var(--white);
+  cursor: pointer;
+  opacity: 0.7;
+}
+a:hover {
+  opacity: 1;
+  color: var(--white);
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: var(--fontWeight-s);
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-size: var(--fnSizes-xxl);
+}
+h2 {
+  font-size: 55px;
+}
+h3 {
+  font-size: var(--fnSizes-sm);
+}
+h4 {
+  font-size: var(--fnSizes-s);
+}
+h5 {
+  font-size: var(--fnSizes-xs);
+}
+p {
+  margin: 0;
+}
+/* Section */
+.titleSection {
+  font-size: var(--fnSizes-xs);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1040px) {
+  .container {
+    padding-right: 48px;
+    padding-left: 48px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.flex {
+  display: flex;
+}

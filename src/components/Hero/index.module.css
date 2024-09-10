@@ -1,0 +1,140 @@
+.heroContainer {
+  padding-top: 25px;
+  padding-left: 36px;
+  display: flex;
+  gap: 38px;
+  padding-right: 0;
+}
+.heroFooterContainer {
+  display: flex;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 220px;
+}
+
+.wrapperHeroFooterContainer {
+  background-color: var(--black);
+}
+.infoSide {
+  position: relative;
+  width: 50%;
+}
+.imgSide {
+  width: 50%;
+  position: relative;
+}
+
+.imgSide::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/hero/mind.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+}
+.title {
+  font-family: 'Bebas', Arial, sans-serif;
+}
+.title,
+.infoTitle {
+  text-transform: uppercase;
+}
+.subTitle {
+  margin-left: auto;
+  width: fit-content;
+  display: block;
+  transform: translate(0, -20px);
+}
+.textContainer {
+  padding-right: 290px;
+  position: relative;
+}
+.infoTitle {
+  padding-top: 45px;
+  font-size: 22px;
+  line-height: 26.82px;
+  position: relative;
+  font-weight: var(--fontWeight-xl);
+  font-family: var(--fontFamilyMontserrat);
+  margin-bottom: 10px;
+}
+
+.infoTitle::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 68px;
+  height: 2px;
+  background-color: var(--black);
+}
+
+.heroText {
+  font-size: 20px;
+  line-height: 26.82px;
+  display: inline-block;
+  position: relative;
+  font-weight: var(--fontWeight-s);
+  font-family: var(--fontFamilyMontserrat);
+}
+.heroText::before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: var(--dark);
+  right: 0;
+  bottom: 0;
+}
+.photo {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+.btn {
+  margin-top: 80px;
+  text-transform: uppercase;
+}
+.titleHeroFooter {
+  font-weight: var(--fontWeight-s);
+  font-family: var(--fontFamilyBebas);
+  font-size: var(--fontSize-s);
+  color: var(--white);
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+.titleHeroFooter::after {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: var(--orange);
+  bottom: 7px;
+  right: -30px;
+}
+.btnFooterContainer {
+  background-color: transparent;
+  color: var(--orange);
+  width: 150px;
+  border: var(--border);
+  padding: 8px;
+  padding-right: 22px;
+  height: 107px;
+  text-align: left;
+}
+.btnFooterText {
+  font-family: var(--fontFamilyMontserrat);
+  font-weight: 800;
+  line-height: 45px;
+  font-size: 35px;
+}

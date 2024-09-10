@@ -1,0 +1,127 @@
+.roadForWhomWrapper {
+  display: flex;
+  padding-top: 78px;
+  justify-content: space-between;
+  padding-bottom: 68px;
+  position: relative;
+}
+.roadForWhomFooter {
+  background-color: var(--black);
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--orange);
+  padding-bottom: 24px;
+  padding-top: 24px;
+  position: relative;
+  z-index: 1;
+}
+.roadForWhomFooter > span {
+  /* TODO add font size */
+  font-size: 48px;
+  font-family: var(--fontFamilyMontserrat);
+  /* TODO add font weight */
+  font-weight: 900;
+}
+.roadForWhomWrapper::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 100%;
+  width: 25%;
+  background-image: url(../../images/road/to.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.roadForWhomWrapper > div,
+.photoContainer {
+  width: 100%;
+  max-width: 33.3%;
+}
+.list {
+  padding-left: 50px;
+}
+.list > li {
+  margin-bottom: 15px;
+  position: relative;
+  color: var(--black);
+  font-size: var(--fontSize-xs);
+  font-weight: var(--fontWeight-s);
+  font-family: var(--fontFamilyMontserrat);
+}
+.list > li::after {
+  content: ' ';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--black);
+  left: -25px;
+  position: absolute;
+  top: 8px;
+}
+
+.subtitle {
+  color: var(--grey);
+  font-size: var(--fnSizes-xl);
+  text-transform: uppercase;
+  font-family: var(--fontFamilyBebas);
+}
+.happyness {
+  margin-bottom: 110px;
+  display: block;
+  margin-left: auto;
+  width: fit-content;
+  text-transform: uppercase;
+}
+.btn {
+  background-color: var(--orange);
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 78px;
+}
+.photoContainer {
+  position: relative;
+  z-index: 1;
+  height: auto;
+}
+.photoContainer::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -98px;
+  right: -110px;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  background-color: var(--orange);
+}
+.photo {
+  position: absolute;
+  bottom: -68px;
+  height: 100%;
+}
+.title {
+  /* TODO add font family */
+  font-size: var(--fnSizes-xl);
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.description {
+  /* TODO add font family */
+  font-size: var(--fontSize-s);
+  font-weight: var(--fontWeight-s);
+}
+.toGetTitle {
+  display: block;
+  margin-top: 20px;
+  font-size: var(--fontSize-s);
+  font-weight: var(--fontWeight-s);
+}
+.name {
+  font-size: var(--fontSize-s);
+  font-weight: var(--fontWeight-m);
+}

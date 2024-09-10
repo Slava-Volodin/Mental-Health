@@ -1,0 +1,45 @@
+.wrapperEducation {
+  display: flex;
+  padding-top: 40px;
+  justify-content: space-between;
+}
+.photoContainer {
+  position: relative;
+}
+
+.photoContainer::after {
+  content: 'psychology';
+  color: var(--black);
+  font-size: 124px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  left: 46px;
+}
+.photoContainer::before {
+  content: 'course';
+  color: var(--black);
+  font-size: 40px;
+  position: absolute;
+  bottom: 25px;
+  right: 45px;
+}
+
+.textContainer {
+  padding-top: 140px;
+  max-width: 500px;
+}
+.title {
+  font-size: var(--fontSize-xxxl);
+  text-transform: uppercase;
+  line-height: 100.8px;
+  font-family: var(--fontFamilyBebas);
+  margin-bottom: 12px;
+}
+.description {
+  font-size: var(--fontSize-xs);
+  font-weight: var(--fontWeight-s);
+  font-family: var(--fontFamilyMontserrat);
+  margin-bottom: 33px;
+  display: inline-block;
+}
