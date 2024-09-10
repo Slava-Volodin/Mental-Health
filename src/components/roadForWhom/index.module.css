@@ -68,7 +68,7 @@
   color: var(--grey);
   font-size: var(--fnSizes-xl);
   text-transform: uppercase;
-  font-family: var(--fontFamilyBebas);
+  font-family: 'Bebas';
 }
 .happyness {
   margin-bottom: 110px;
@@ -109,11 +109,13 @@
   font-size: var(--fnSizes-xl);
   white-space: nowrap;
   text-transform: uppercase;
+  font-family: 'Bebas';
 }
 .description {
   /* TODO add font family */
   font-size: var(--fontSize-s);
   font-weight: var(--fontWeight-s);
+  font-family: 'Montserrat';
 }
 .toGetTitle {
   display: block;

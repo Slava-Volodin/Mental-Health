@@ -17,7 +17,7 @@ export default function QuestionCard({
         <h3 className={s.title}>{title}</h3>
         <Arrow className={s.arrowIcon} />
       </div>
-      {isOpen && <span className={s.description}>{description}</span>}
+      {!isOpen && <span className={s.description}>{description}</span>}
     </li>
   );
 }
