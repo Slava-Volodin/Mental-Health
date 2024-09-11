@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding-bottom: 68px;
   position: relative;
+  overflow: hidden;
 }
 .roadForWhomFooter {
   background-color: var(--black);
@@ -23,7 +24,8 @@
   /* TODO add font weight */
   font-weight: 900;
 }
-.roadForWhomWrapper::before {
+.roadForWhomWrapper::before,
+.rightSide::before {
   content: '';
   display: block;
   position: absolute;
@@ -36,11 +38,13 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-
+.rightSide::before {
+  display: none;
+}
 .roadForWhomWrapper > div,
 .photoContainer {
   width: 100%;
-  max-width: 33.3%;
+  flex-basis: 33.3%;
 }
 .list {
   padding-left: 50px;
@@ -101,29 +105,168 @@
 }
 .photo {
   position: absolute;
-  bottom: -68px;
   height: 100%;
+  bottom: -100px;
+  z-index: 1;
 }
 .title {
-  /* TODO add font family */
+  font-family: var(--fontFamilyBebas);
   font-size: var(--fontSize-xl);
   white-space: nowrap;
   text-transform: uppercase;
-  font-family: 'Bebas';
+  font-family: var(--fontFamilyBebas);
 }
 .description {
-  /* TODO add font family */
   font-size: var(--fontSize-s);
   font-weight: var(--fontWeight-s);
-  font-family: 'Montserrat';
+  font-family: var(--fontFamilyMontserrat);
 }
 .toGetTitle {
   display: block;
   margin-top: 20px;
+  font-family: var(--fontFamilyMontserrat);
   font-size: var(--fontSize-s);
   font-weight: var(--fontWeight-s);
 }
 .name {
+  font-family: var(--fontFamilyMontserrat);
   font-size: var(--fontSize-s);
   font-weight: var(--fontWeight-m);
+}
+
+@media screen and (width <= 1300px) {
+  .photo {
+    height: 90%;
+    z-index: 1;
+  }
+
+  .list li {
+    font-size: clamp(var(--fontSize-smaller), 2vw, var(--fontSize-xs));
+  }
+
+  .happyness {
+    margin-bottom: 80px;
+  }
+  .photoContainer::after {
+    right: -150px;
+  }
+}
+
+@media screen and (width <= 1240px) {
+  .roadForWhomWrapper {
+    padding-top: 66px;
+  }
+  .roadForWhomWrapper::before {
+    display: none;
+  }
+  .photoContainer::after {
+    right: -150px;
+  }
+  .rightSide {
+    position: relative;
+  }
+  .rightSide::before {
+    display: block;
+    left: -60px;
+    top: 0;
+    width: 75px;
+  }
+  .photo {
+    height: 70%;
+    left: 0;
+  }
+}
+
+@media screen and (width <= 950px) {
+  .happyness {
+    margin-bottom: 50px;
+  }
+
+  .roadForWhomWrapper::before {
+    width: 100px;
+    left: 20px;
+  }
+  .photo {
+    height: 60%;
+    left: 20px;
+  }
+
+  .photoContainer::after {
+    right: -300px;
+  }
+}
+
+@media screen and (width < 768px) {
+  .roadForWhomWrapper {
+    flex-direction: column;
+    padding-top: 66px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .leftSide {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .description,
+  .name {
+    font-size: var(--fontSize-xxs);
+  }
+  .rightSide::before {
+    display: none;
+  }
+  .toGetTitle {
+    margin-top: 40px;
+    font-size: var(--fontSize-xxs);
+  }
+  .photoContainer {
+    width: 100%;
+    position: relative;
+  }
+  .photo {
+    width: 100%;
+    height: auto;
+    position: static;
+    left: 0;
+  }
+  .list {
+    padding-right: 25px;
+    padding-left: 40px;
+  }
+  .list li {
+    font-size: clamp(var(--fontSize-smaller), 4vw, var(--fontSize-s));
+  }
+  .list li::after {
+    left: -15px;
+    width: 8px;
+    height: 8px;
+  }
+  .titleMob {
+    font-size: clamp(var(--fontSize-xl), 2vw, var(--fontSize-xxxl));
+    margin-top: 60px;
+    margin-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .roadForWhomFooter {
+    background-color: transparent;
+    max-width: 630px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 385px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 24px;
+    padding-top: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .roadForWhomFooter > span {
+    /* TODO add font size */
+    font-size: 36px;
+    color: var(--orange);
+    font-family: var(--fontFamilyMontserrat);
+    /* TODO add font weight */
+    font-weight: 900;
+  }
 }
