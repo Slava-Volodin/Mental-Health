@@ -4,12 +4,14 @@ import Hero from './components/Hero';
 import RoadForWhom from './components/RoadForWhom';
 import AboutMe from './components/AboutMe';
 import Questions from './components/Questions';
+import Footer from './components/Footer';
 
 import { useBreakpoints } from './utils/hooks/useBreakpoints';
 import classNames from 'classnames';
 
-// import Action from './components/Action';
-// import Footer from './components/Footer';
+
+import Action from './components/Action';
+
 
 function App() {
   const { isMobile, isTablet, isDesktop } = useBreakpoints();
@@ -20,14 +22,11 @@ function App() {
     <div className={classNameDevice}>
       <Header />
       <Hero />
-
       <RoadForWhom />
       <AboutMe />
+      <Action />
       <Questions />
-
-      {/* <Action /> */}
-      {/* <Questions /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

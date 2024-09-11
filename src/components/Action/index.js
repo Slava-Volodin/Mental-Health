@@ -8,9 +8,15 @@ import s from './index.module.css';
 
 // import s from './index.module.css';
 
-export default function Action() {
+export default function Action({ theme }) {
+  console.log(theme);
+
   return (
-    <div className={classNames('container', s.actionWrapper)}>
+    <div
+      className={classNames('container', s.actionWrapper, {
+        [s[theme]]: theme,
+      })}
+    >
       <CardPrice />
       <Timer />
     </div>
