@@ -9,7 +9,9 @@ import Footer from './components/Footer';
 import { useBreakpoints } from './utils/hooks/useBreakpoints';
 import classNames from 'classnames';
 
+
 import Action from './components/Action';
+
 
 function App() {
   const { isMobile, isTablet, isDesktop } = useBreakpoints();
@@ -20,11 +22,6 @@ function App() {
     <div className={classNameDevice}>
       <Header />
       <Hero />
-
-      <RoadForWhom />
-      <AboutMe />
-      <Questions />
-
       <RoadForWhom />
       <AboutMe />
       <Action />

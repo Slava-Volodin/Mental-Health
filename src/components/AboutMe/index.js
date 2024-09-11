@@ -3,8 +3,10 @@ import educationPhoto from '../../images/educationPhoto.png';
 import Button from '../Button';
 import classNames from 'classnames';
 import s from './index.module.css';
+import { useBreakpoints } from '../../utils/hooks/useBreakpoints';
 
 export default function AboutMe() {
+  const { isMobile } = useBreakpoints();
   return (
     <div className={classNames(s.wrapperEducation, 'container')}>
       <div className={s.photoContainer}>
@@ -20,7 +22,15 @@ export default function AboutMe() {
           роботі використовує сучасні методики та індивідуальний підхід до
           кожного клієнта.
         </span>
-        <Button className={s.btnSignUp} text={<span>Зареєстуватись</span>} />
+        {!isMobile && (
+          <Button className={s.btnSignUp} text={<span>Зареєстуватись</span>} />
+        )}
+        {isMobile && (
+          <>
+            <h3 className={s.titleMob}>psychology</h3>
+            <span>course</span>
+          </>
+        )}
       </div>
     </div>
   );

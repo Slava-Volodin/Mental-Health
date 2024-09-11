@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { questionsData } from '../../data/questions';
 import QuestionCard from './components/questionCard';
+import roadtohappyness from '../../images/road/roadtohappyness.png';
+import questionPhoto from '../../images/questionPhoto.png';
 import classNames from 'classnames';
 import Button from '../Button';
 
@@ -19,6 +21,14 @@ export default function Questions() {
 
   return (
     <div className={classNames('container', s.wrapperQuestions)}>
+      <img
+        className={s.bgQuestion}
+        alt="road_to_question_photo"
+        src={questionPhoto}
+      />
+      <div className={s.roadToHappynessWrapper}>
+        <img alt="road_to_happyness_Text" src={roadtohappyness} />
+      </div>
       <div className={s.listWrapper}>
         <h2 className={s.titleWrapper}>часті запитання</h2>
         <ul className={s.listContainer}>
