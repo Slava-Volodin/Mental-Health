@@ -1,4 +1,6 @@
 .footerSectionWrapper {
+  position: relative;
+  z-index: 2;
   background-color: var(--black);
   padding-top: 48px;
   padding-bottom: 40px;
@@ -13,4 +15,23 @@
   justify-content: flex-end;
   gap: 60px;
   width: 95%;
+}
+.footerTitle {
+  position: absolute;
+  left: 77px;
+  top: -109px;
+}
+
+.footerSpan {
+  display: block;
+  color: var(--light);
+  white-space: nowrap;
+  font-family: var(--fontFamilyMontserrat);
+  font-size: var(--fontSize-s);
+  font-weight: var(--fontWeight-s);
+}
+
+.footerBottom {
+  display: flex;
+  align-items: flex-end;
 }
