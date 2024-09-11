@@ -56,7 +56,7 @@
 
 /* || Tablet */
 
-@media screen and (width <= 1240px) {
+@media screen and (width <= 1200px) {
   .photoContainer::after {
     display: none;
   }

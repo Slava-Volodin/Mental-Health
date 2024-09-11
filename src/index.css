@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
+  /* || colors */
   --orange: #fc6500;
   --white: #f1f1f1;
   --dark: #1d1d1b;
@@ -8,11 +9,12 @@
   --grey: #adadad;
   --btn-text-color: #fef7f3;
 
-
+  /* || font family */
   --fontFamilyBebas: 'Bebas', system-ui;
   --fontFamilyMontserrat: 'Montserrat', system-ui;
   --fontFamilyMontserratItalic: 'MontserratItalic', system-ui;
-  
+
+  /* || font size */
   --fontSize-smaller: 14px;
   --fontSize-xxs: 24px;
   --fontSize-xs: 26px;
@@ -20,17 +22,20 @@
   --fontSize-m-xs: 40px;
   --fontSize-m-s: 55px;
   --fontSize-m: 60px;
+  --fontSize-md: 66px;
+  --fontSize-l: 80px;
   --fontSize-xl: 100px;
   --fontSize-xxl: 104px;
   --fontSize-xxxl: 120px;
 
+  /* || font weight */
   --fontWeight-s: 400;
   --fontWeight-m: 700;
   --fontWeight-xl: 800;
 
   --border: 4px solid #e0e0e0;
 
-  --desktop: 1240px;
+  --desktop: 1200px;
 }
 
 * {
@@ -79,7 +84,7 @@ button {
   background-color: unset;
   cursor: pointer;
   display: block;
-  font-size: var(--fnSizes-s);
+  font-size: clamp(var(--fontSize-xxs), 10vw, var(--fnSizes-s));
   font-family: var(--fontFamilyBebas);
   font-style: normal;
   font-weight: 400;
@@ -127,15 +132,15 @@ img {
 }
 
 h1 {
-  font-size: clamp(var(--fontSize-xxl), 5vw, var(--fontSize-xxxl));
+  font-size: clamp(var(--fontSize-md), 5vw, var(--fontSize-xxl));
 }
 
 h2 {
-  font-size: clamp(var(--fontSize-xxl), 6vw, var(--fontSize-xl));
+  font-size: clamp(var(--fontSize-xl), 6vw, var(--fontSize-l));
 }
 
 h3 {
-  font-size: clamp(var(--fontSize-xl), 5vw, var(--fontSize-m));
+  font-size: clamp(var(--fontSize-l), 5vw, var(--fontSize-m));
 }
 
 h4 {
@@ -159,51 +164,54 @@ p {
   text-transform: uppercase;
 }
 
-@media screen and (width <= 1040px) {
+@media screen and (width <= 1200) {
   .container {
-    padding-right: 48px;
-    padding-left: 48px;
-  }
-
-  h1 {
-    font-size: clamp(var(--fontSize-xxl), 6vw, var(--fontSize-xl));
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   h2 {
-    font-size: clamp(var(--fontSize-xl), 5vw, var(--fontSize-m));
+    font-size: clamp(var(--fontSize-xl), 4vw, var(--fontSize-m));
   }
 
   h3 {
-    font-size: clamp(var(--fontSize-m), 5vw, var(--fontSize-s));
+    font-size: clamp(var(--fontSize-m), 4vw, var(--fontSize-s));
   }
 
   h4 {
-    font-size: clamp(var(--fontSize-s), 5vw, var(--fontSize-xs));
+    font-size: clamp(var(--fontSize-s), 4vw, var(--fontSize-xs));
   }
 }
 
 @media screen and (width <= 768px) {
-  h1 {
-    font-size: clamp(var(--fontSize-xl), 5vw, var(--fontSize-m));
+  :root {
+    --white: #f1f1f1;
+  }
+  .container {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  /* h1 {
+    font-size: clamp(var(--fontSize-xl), 3vw, var(--fontSize-m));
   }
 
   h2 {
-    font-size: clamp(var(--fontSize-m), 5vw, var(--fontSize-s));
+    font-size: clamp(var(--fontSize-m), 3vw, var(--fontSize-s));
   }
 
   h3 {
-    font-size: clamp(var(--fontSize-s), 5vw, var(--fontSize-xs));
-  }
+    font-size: clamp(var(--fontSize-s), 3vw, var(--fontSize-xs));
+  } */
 }
 
 @media screen and (width <= 480px) {
-  h1 {
-    font-size: clamp(var(--fontSize-m), 5vw, var(--fontSize-s));
+  /* h1 {
+    font-size: var(--fontSize-md);
   }
 
   h2 {
-    font-size: clamp(var(--fontSize-s), 5vw, var(--fontSize-xs));
-  }
+    font-size: clamp(var(--fontSize-s), 2vw, var(--fontSize-xs));
+  } */
 }
 
 .flex {
