@@ -1,10 +1,16 @@
 .footerSectionWrapper {
   background-color: var(--black);
+  padding-top: 48px;
+  padding-bottom: 40px;
 }
 
 .footerSection {
+  position: relative;
 }
 
 .links {
   display: flex;
+  justify-content: flex-end;
+  gap: 60px;
+  width: 95%;
 }
