@@ -2,60 +2,47 @@
   padding-top: 25px;
   padding-left: 36px;
   display: flex;
-  gap: 38px;
+  gap: 16px;
   padding-right: 0;
-}
-.heroFooterContainer {
-  display: flex;
-  padding-top: 55px;
-  padding-bottom: 55px;
-  align-items: center;
+  overflow-x: hidden;
   justify-content: space-between;
-  max-height: 220px;
 }
 
-.wrapperHeroFooterContainer {
-  background-color: var(--black);
-}
-.infoSide {
-  position: relative;
-  width: 50%;
-}
+.infoSide,
 .imgSide {
-  width: 50%;
   position: relative;
 }
 
-.imgSide::after {
-  content: ' ';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(../../images/hero/mind.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  top: 0;
-  right: 0;
+/* ||  Text Side */
+
+.infoSide {
+  flex-basis: 45%;
 }
+
 .title {
-  font-family: 'Bebas', Arial, sans-serif;
+  font-family: var(--fontFamilyBebas);
+  color: var(--dark);
+  font-size: clamp(var(--fontSize-md), 10vw, var(--fontSize-xxl));
 }
+
 .title,
 .infoTitle {
   text-transform: uppercase;
 }
+
 .subTitle {
   margin-left: auto;
   width: fit-content;
   display: block;
-  transform: translate(0, -20px);
+  transform: translate(0, -25px);
   font-family: var(--fontFamilyMontserrat);
+  font-size: clamp(var(--fontSize-s), 4vw, var(--fontSize-m-xs));
 }
 .textContainer {
-  padding-right: 290px;
+  max-width: 390px;
   position: relative;
 }
+
 .infoTitle {
   padding-top: 45px;
   font-size: 22px;
@@ -79,21 +66,67 @@
 
 .heroText {
   font-size: 20px;
+  font-size: clamp(16px, 4vw, 22px);
   line-height: 26.82px;
   display: inline-block;
   position: relative;
   font-weight: var(--fontWeight-s);
   font-family: var(--fontFamilyMontserrat);
 }
+
 .heroText::before {
   position: absolute;
   content: '';
   width: 12px;
   height: 12px;
   background-color: var(--dark);
-  right: 0;
+  right: -20px;
   bottom: 0;
 }
+
+.btnSignUpDesktop {
+  margin-top: 20%;
+  text-transform: uppercase;
+}
+
+/* ||  Photo Side */
+
+.imgSide {
+  flex-basis: 65%;
+}
+
+.imgSide::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/hero/mind.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+}
+
+.designTextBg {
+  position: absolute;
+  right: 7%;
+  top: 25%;
+  z-index: 1;
+  line-height: 32px;
+  max-width: 85px;
+  font-family: var(--fontFamilyBebas);
+  font-size: clamp(var(--fontSize-xxs), 4vw, var(--fontSize-xs));
+}
+.designTextBg::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--dark);
+  transform: translate(-20px, 15px);
+}
+
 .photo {
   margin: 0 auto;
   position: relative;
@@ -101,9 +134,20 @@
   width: 100%;
   height: auto;
 }
-.btn {
-  margin-top: 80px;
-  text-transform: uppercase;
+
+/* ||  FooterContainer */
+
+.heroFooterContainer {
+  display: flex;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 220px;
+}
+
+.wrapperHeroFooterContainer {
+  background-color: var(--black);
 }
 .titleHeroFooter {
   font-weight: var(--fontWeight-s);
@@ -123,6 +167,7 @@
   bottom: 7px;
   right: -30px;
 }
+
 .btnFooterContainer {
   background-color: transparent;
   color: var(--orange);
@@ -133,9 +178,121 @@
   height: 107px;
   text-align: left;
 }
+
 .btnFooterText {
   font-family: var(--fontFamilyMontserrat);
   font-weight: 800;
   line-height: 45px;
   font-size: 35px;
+}
+
+/* ||  Media */
+
+@media screen and (width <= 1200px) {
+  .heroContainer {
+    padding-left: 36px;
+    gap: 20px;
+  }
+  .infoTitle {
+    font-size: clamp(16px, 4vw, 22px);
+  }
+  .btnSignUpDesktop {
+    margin-top: 18%;
+  }
+  .titlesWrapper {
+    width: fit-content;
+  }
+}
+
+@media screen and (width <= 1040px) {
+  .infoSide {
+    flex-basis: 35%;
+  }
+
+  .imgSide {
+    flex-basis: 60%;
+  }
+
+  .heroText::before {
+    right: 0;
+  }
+  .btnSignUpDesktop {
+    margin-top: 15%;
+  }
+  .infoTitle {
+    margin-bottom: 6px;
+  }
+  .designTextBg {
+    font-size: var(--fontSize-xs);
+  }
+}
+
+@media screen and (width <= 900px) {
+  .btnSignUpDesktop {
+    display: none;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .heroContainer {
+    padding-left: 0;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 20px;
+  }
+  .textContainer {
+    max-width: unset;
+  }
+  .titlesWrapper {
+    margin-left: auto;
+  }
+  .subTitle {
+    transform: translate(0, -20px);
+  }
+  .infoSide {
+    padding-left: 25px;
+    width: 85%;
+  }
+
+  .imgSide {
+    width: 100%;
+    padding-top: 100px;
+  }
+  .infoTitle {
+    line-height: 20px;
+    padding-top: 24px;
+    padding-right: 50px;
+    font-size: clamp(16px, 3vw, 22px);
+  }
+  .infoTitle::after {
+    width: 40px;
+    top: -20px;
+  }
+
+  .heroText {
+    line-height: 20px;
+    padding-right: 50px;
+  }
+
+  .photo {
+    transform: translateX(25%);
+  }
+
+  .designTextBg {
+    font-size: clamp(var(--fontSize-smaller), 10vw, var(--fontSize-xs));
+    max-width: 60px;
+    left: 10%;
+    bottom: 20%;
+    top: unset;
+  }
+  .designTextBg::before {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+@media screen and (width < 768px) {
+  .btnSignUpDesktop {
+    display: none;
+  }
 }
