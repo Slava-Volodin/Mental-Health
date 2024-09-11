@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import { useBreakpoints } from './utils/hooks/useBreakpoints';
 import classNames from 'classnames';
 // import WhatIncludesDiagnostics from './components/WhatIncludesDiagnostics';
+import IndividualApproach from './components/IndividualApproach';
 
 function App() {
   const { isMobile, isTablet, isDesktop } = useBreakpoints();
@@ -23,6 +24,7 @@ function App() {
 
       <AboutMe />
       {/* <WhatIncludesDiagnostics /> */}
+      <IndividualApproach />
       <Questions />
       <Footer />
     </div>
