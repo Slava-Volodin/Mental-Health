@@ -1,0 +1,80 @@
+.wrapperHeroFooterContainer {
+  background-color: var(--black);
+}
+.heroFooterContainer {
+  display: flex;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 220px;
+}
+
+.titleHeroFooter {
+  font-weight: var(--fontWeight-s);
+  font-family: var(--fontFamilyBebas);
+  font-size: var(--fontSize-s);
+  color: var(--white);
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+.titleHeroFooter::after {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: var(--orange);
+  bottom: 7px;
+  right: -30px;
+}
+.btnFooterContainer {
+  background-color: transparent;
+  color: var(--orange);
+  width: 150px;
+  border: var(--border);
+  padding: 8px;
+  padding-right: 22px;
+  height: 107px;
+  text-align: left;
+}
+
+@media screen and (width <= 768px) {
+  .heroFooterContainer {
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 42px;
+    max-height: unset;
+    margin-top: 6px;
+  }
+  .titleHeroFooter {
+    font-size: var(--fontSize-s);
+    margin-bottom: 6px;
+  }
+  .titleHeroFooter::after {
+    display: none;
+  }
+
+  .btnFooterContainer.mobLogo {
+    background-color: transparent;
+    width: 100%;
+    margin: 0 auto;
+    border: unset;
+    padding: 0;
+    height: fit-content;
+    text-align: center;
+  }
+  .btnFooterContainer.mobLogo > img {
+    margin: 20px auto;
+  }
+  button.btnSignUp {
+    border-radius: 66px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (width <= 480px) {
+  button.btnSignUp {
+    width: 100%;
+  }
+}

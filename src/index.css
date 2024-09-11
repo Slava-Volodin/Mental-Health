@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
   /* || colors */
   --orange: #fc6500;
@@ -72,6 +70,11 @@ body {
   font-style: normal;
   font-weight: var(--fontWeight-s);
   color: var(--black);
+  background-color: var(--white);
+}
+
+.isMobile {
+  --white: #fff;
   background-color: var(--white);
 }
 
@@ -184,34 +187,10 @@ p {
 }
 
 @media screen and (width <= 768px) {
-  :root {
-    --white: #f1f1f1;
-  }
   .container {
     padding-right: 25px;
     padding-left: 25px;
   }
-  /* h1 {
-    font-size: clamp(var(--fontSize-xl), 3vw, var(--fontSize-m));
-  }
-
-  h2 {
-    font-size: clamp(var(--fontSize-m), 3vw, var(--fontSize-s));
-  }
-
-  h3 {
-    font-size: clamp(var(--fontSize-s), 3vw, var(--fontSize-xs));
-  } */
-}
-
-@media screen and (width <= 480px) {
-  /* h1 {
-    font-size: var(--fontSize-md);
-  }
-
-  h2 {
-    font-size: clamp(var(--fontSize-s), 2vw, var(--fontSize-xs));
-  } */
 }
 
 .flex {

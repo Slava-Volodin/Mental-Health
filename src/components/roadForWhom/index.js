@@ -30,7 +30,7 @@ export default function RoadForWhom() {
           <span className={s.name}>психолога Костюка Максима</span>
           <Button
             className={s.btn}
-            callback={() => console.log('click')}
+            onClick={() => console.log('click')}
             text={<span className={s.btnText}>Зареєстуватись</span>}
           />
         </div>
