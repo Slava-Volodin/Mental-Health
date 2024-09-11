@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import RoadForWhomFooter from './RoadForWhomFooter';
+import SectionFooter from '../SectionFooter';
 
 import Button from '../Button';
 
@@ -73,7 +73,7 @@ export default function RoadForWhom() {
           </ul>
         </div>
       </div>
-      <RoadForWhomFooter />
+      <SectionFooter text="зміни в житті починаються із змін мислення" />
     </div>
   );
 }

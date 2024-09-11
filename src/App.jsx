@@ -8,10 +8,7 @@ import Footer from './components/Footer';
 
 import { useBreakpoints } from './utils/hooks/useBreakpoints';
 import classNames from 'classnames';
-
-
-import Action from './components/Action';
-
+// import WhatIncludesDiagnostics from './components/WhatIncludesDiagnostics';
 
 function App() {
   const { isMobile, isTablet, isDesktop } = useBreakpoints();
@@ -23,8 +20,9 @@ function App() {
       <Header />
       <Hero />
       <RoadForWhom />
+
       <AboutMe />
-      <Action />
+      {/* <WhatIncludesDiagnostics /> */}
       <Questions />
       <Footer />
     </div>
