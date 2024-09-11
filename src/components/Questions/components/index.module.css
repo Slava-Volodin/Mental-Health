@@ -4,7 +4,6 @@
   border: 4px solid var(--black);
   backdrop-filter: blur(10px);
   height: fit-content;
-  transition-property: transform;
 }
 .titleWrapper {
   display: flex;
@@ -14,9 +13,10 @@
   width: 32px;
   height: 17px;
 }
-.title {
+h3.title {
   font-family: var(--fontFamilyMontserrat);
   font-weight: var(--fontWeight-xl);
+  font-size: var(--fontSize-smaller);
   line-height: 16px;
   flex-basis: 90%;
 }
@@ -25,5 +25,4 @@
   font-size: var(--fontSize-smaller);
   display: block;
   margin-top: 26px;
-  transition-duration: 300ms;
 }
