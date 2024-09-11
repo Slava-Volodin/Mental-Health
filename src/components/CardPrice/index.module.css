@@ -37,3 +37,9 @@
   background-color: var(--orange);
   color: var(--light);
 }
+
+@media screen and (width <= 768px) {
+  .card {
+    width: 339px;
+  }
+}

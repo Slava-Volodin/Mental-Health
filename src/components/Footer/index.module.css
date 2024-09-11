@@ -35,3 +35,37 @@
   display: flex;
   align-items: flex-end;
 }
+@media screen and (width <= 1240px) {
+  .links {
+    gap: 50px;
+  }
+
+  .footerBottom {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (width <= 768px) {
+  .footerTitleMob {
+    max-width: 105px;
+    height: auto;
+    padding-top: 55px;
+    padding-bottom: 93px;
+  }
+  .footerTitleMob > img {
+    width: 100%;
+    height: auto;
+  }
+  .footerBottom {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .links {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .footerSpan {
+    font-size: var(--fontSize-smaller);
+    width: 100%;
+  }
+}

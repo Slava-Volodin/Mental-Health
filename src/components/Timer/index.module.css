@@ -23,3 +23,21 @@ h3.timerTitle {
   font-family: var(--fontFamilyMontserrat);
   font-weight: var(--fontWeight-s);
 }
+
+@media screen and (width <= 768px) {
+  h3.timerTitle {
+    font-size: var(--fontSize-xs);
+  }
+  .timerSubDescription {
+    font-weight: var(--fontWeight-xl);
+  }
+  .timerWrapper {
+    align-items: center;
+  }
+}
+
+@media screen and (width <= 1240px) {
+  .timerWrapper {
+    align-items: center;
+  }
+}
