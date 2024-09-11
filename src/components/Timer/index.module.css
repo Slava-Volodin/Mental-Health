@@ -1,0 +1,25 @@
+.timerWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+h3.timerTitle {
+  font-size: var(--fontSize-m);
+  white-space: nowrap;
+}
+
+.timerNumber {
+}
+
+.timerDescription {
+  font-size: var(--fontSize-xxs);
+  font-family: var(--fontFamilyMontserrat);
+  font-weight: var(--fontWeight-xl);
+  margin-bottom: 20px;
+}
+
+.timerSubDescription {
+  font-size: var(--fontSize-xxs);
+  font-family: var(--fontFamilyMontserrat);
+  font-weight: var(--fontWeight-s);
+}

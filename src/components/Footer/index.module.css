@@ -1,0 +1,10 @@
+.footerSectionWrapper {
+  background-color: var(--black);
+}
+
+.footerSection {
+}
+
+.links {
+  display: flex;
+}
