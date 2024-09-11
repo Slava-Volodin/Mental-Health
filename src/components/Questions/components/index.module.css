@@ -26,3 +26,8 @@ h3.title {
   display: block;
   margin-top: 26px;
 }
+@media screen and (width <= 769px) {
+  .wrapper {
+    flex-basis: 100%;
+  }
+}
