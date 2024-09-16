@@ -7,7 +7,7 @@ import { useBreakpoints } from '../../utils/hooks/useBreakpoints';
 
 import s from './index.module.css';
 
-export default function Hero() {
+export default function Hero({ openModal }) {
   const { isMobile } = useBreakpoints();
   return (
     <div>
@@ -26,7 +26,11 @@ export default function Hero() {
             </span>
           </div>
           {!isMobile && (
-            <Button className={s.btnSignUpDesktop} text="Зареєстуватись" />
+            <Button
+              className={s.btnSignUpDesktop}
+              text="Зареєстуватись"
+              onClick={openModal}
+            />
           )}
         </div>
         <div className={s.imgSide}>
@@ -34,7 +38,7 @@ export default function Hero() {
           <div className={s.designTextBg}>NEVER GIVE UP</div>
         </div>
       </div>
-      <HeroFooter />
+      <HeroFooter openModal={openModal} />
     </div>
   );
 }

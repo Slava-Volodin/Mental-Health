@@ -9,7 +9,7 @@ import Action from '../Action';
 import mental from '../../images/mental.png';
 import { useBreakpoints } from '../../utils/hooks/useBreakpoints';
 
-export default function Footer() {
+export default function Footer({ openModal }) {
   const { isMobile } = useBreakpoints();
   return (
     <div className={s.footerSectionWrapper}>
@@ -23,12 +23,12 @@ export default function Footer() {
           </>
         )}
         <div>
-          <Action theme="dark" />
+          <Action openModal={openModal} theme="dark" />
         </div>
         <div className={s.footerBottom}>
           <div>
             <span className={s.footerSpan}>
-              ГО "Ментальні зміни суспільства"
+              ФОП Костюк Максим Петрович ІПН 3097813431
             </span>
           </div>
           {isMobile && (

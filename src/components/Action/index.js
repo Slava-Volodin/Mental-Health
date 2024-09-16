@@ -8,7 +8,7 @@ import s from './index.module.css';
 
 // import s from './index.module.css';
 
-export default function Action({ theme }) {
+export default function Action({ theme, openModal }) {
   console.log(theme);
 
   return (
@@ -17,7 +17,7 @@ export default function Action({ theme }) {
         [s[theme]]: theme,
       })}
     >
-      <CardPrice />
+      <CardPrice openModal={openModal} />
       <Timer />
     </div>
   );

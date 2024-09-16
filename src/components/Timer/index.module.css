@@ -1,6 +1,7 @@
 .timerWrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 h3.timerTitle {
@@ -8,9 +9,31 @@ h3.timerTitle {
   white-space: nowrap;
 }
 
-.timerNumber {
+.timerGroup {
+  display: flex;
+  gap: 20px;
+  font-size: var(--fontSize-xxxl);
+  font-weight: var(--fontWeight-xl);
 }
-
+.timerNumber {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 239px;
+  background-color: var(--orange);
+  color: var(--light);
+  border-radius: 44px;
+  font-weight: var(--fontWeight-xl);
+  font-family: var(--fontFamilyMontserrat);
+}
+/* .timerNumber::after {
+  content: '';
+  display: block;
+  width: 240px;
+  height: 148px;
+  position: absolute;
+  background-color: var(--orange);
+} */
 .timerDescription {
   font-size: var(--fontSize-xxs);
   font-family: var(--fontFamilyMontserrat);
@@ -34,10 +57,25 @@ h3.timerTitle {
   .timerWrapper {
     align-items: center;
   }
+  .timerNumber {
+    font-size: var(--fontSize-md);
+    width: 122px;
+  }
+  .timerGroup {
+    gap: 10px;
+  }
 }
 
 @media screen and (width <= 1240px) {
   .timerWrapper {
     align-items: center;
+    gap: 15px;
+  }
+}
+
+@media screen and (width <= 480px) {
+  .timerNumber {
+    font-size: var(--fontSize-m);
+    width: 100px;
   }
 }

@@ -11,17 +11,17 @@ export default function Links() {
   return (
     <ul className={s.links}>
       <li>
-        <a href=" ">
+        <a href="https://wa.me/491606039906?text=Привет,%20хочу%20узнать%20больше%20о%20ваших%20услугах">
           <img src={Whats}></img>
         </a>
       </li>
       <li>
-        <a href=" ">
+        <a href="https://www.instagram.com/maksym_kostyuk_?igsh=eWhmMnA0NzdlOXM1&utm_source=qr">
           <img src={Instagram}></img>
         </a>
       </li>
       <li>
-        <a href=" ">
+        <a href="https://t.me/MaxymKostyuk">
           <img src={Telegram}></img>
         </a>
       </li>

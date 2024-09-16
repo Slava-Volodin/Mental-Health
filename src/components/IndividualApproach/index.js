@@ -6,8 +6,9 @@ import life from '../../images/life.png';
 
 import s from './index.module.css';
 import classNames from 'classnames';
+import Button from '../Button';
 
-export default function IndividualApproach() {
+export default function IndividualApproach({ openModal }) {
   const { isDesktop } = useBreakpoints();
 
   const year = new Date().getFullYear();
@@ -32,6 +33,11 @@ export default function IndividualApproach() {
           Не зволікайте, зробіть перший крок до покращення свого життя вже
           сьогодні!
         </span>
+        <Button
+          onClick={openModal}
+          className={s.button}
+          text="Зареєстуватись"
+        />
       </div>
       {isDesktop && (
         <div className={s.photoWrapper}>

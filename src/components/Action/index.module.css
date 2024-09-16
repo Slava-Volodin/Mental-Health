@@ -15,6 +15,7 @@
     flex-direction: column-reverse;
     align-items: center;
     gap: 0;
+    padding-bottom: 38px;
   }
 }
 

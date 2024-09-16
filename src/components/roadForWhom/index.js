@@ -9,7 +9,7 @@ import mobPhoto from '../../images/mobPhoto.png';
 import s from './index.module.css';
 import { useBreakpoints } from '../../utils/hooks/useBreakpoints';
 
-export default function RoadForWhom() {
+export default function RoadForWhom({ openModal }) {
   const { isMobile } = useBreakpoints();
   const list = [
     'Для кожного хто розуміє як його психологічний стан впливає на результати в житті зараз.',
@@ -40,7 +40,7 @@ export default function RoadForWhom() {
           {!isMobile && (
             <Button
               className={s.btn}
-              onClick={() => console.log('click')}
+              onClick={openModal}
               text={<span className={s.btnText}>Зареєстуватись</span>}
             />
           )}

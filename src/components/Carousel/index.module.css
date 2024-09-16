@@ -1,0 +1,13 @@
+.carouselWrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.carouselImg {
+  margin: 0 auto;
+  width: calc(100% - 30px);
+}
+.wrapperSlides > div > div {
+  align-items: center !important;
+  padding: 20px 0;
+}

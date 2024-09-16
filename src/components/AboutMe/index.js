@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import s from './index.module.css';
 import { useBreakpoints } from '../../utils/hooks/useBreakpoints';
 
-export default function AboutMe() {
+export default function AboutMe({ openModal }) {
   const { isMobile } = useBreakpoints();
   return (
     <div className={classNames(s.wrapperEducation, 'container')}>
@@ -23,7 +23,11 @@ export default function AboutMe() {
           кожного клієнта.
         </span>
         {!isMobile && (
-          <Button className={s.btnSignUp} text={<span>Зареєстуватись</span>} />
+          <Button
+            onClick={openModal}
+            className={s.btnSignUp}
+            text={<span>Зареєстуватись</span>}
+          />
         )}
         {isMobile && (
           <>

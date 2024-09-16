@@ -8,7 +8,7 @@ import Button from '../Button';
 
 import s from './index.module.css';
 
-export default function Questions() {
+export default function Questions({ openModal }) {
   const [questions, setQuestions] = useState(questionsData);
 
   const handleClick = (id) => {
@@ -40,7 +40,11 @@ export default function Questions() {
             />
           ))}
         </ul>
-        <Button className={s.btnSignUp} text={<span>Зареєстуватись</span>} />
+        <Button
+          onClick={openModal}
+          className={s.btnSignUp}
+          text={<span>Зареєстуватись</span>}
+        />
       </div>
     </div>
   );

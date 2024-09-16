@@ -7,7 +7,7 @@ import moneyBlack from '../../images/moneyBlack.png';
 import s from './index.module.css';
 import classNames from 'classnames/bind';
 
-export default function CardPrice({ theme }) {
+export default function CardPrice({ theme, openModal }) {
   return (
     <div className={classNames(s.card, { [s[theme]]: theme })}>
       {theme === 'light' && <img className={s.cardPrice} src={moneyBlack} />}
@@ -16,7 +16,11 @@ export default function CardPrice({ theme }) {
         ЗА СПЕЦІАЛЬНОЮ та ОБМЕЖЕНОЮ У ЧАСІ ПРОПОЗИЦІЄЮ
       </span>
       {theme !== 'light' && <img className={s.cardPrice} src={money} />}
-      <Button className={s.cardBtn} text={<span>Зареєструватись</span>} />
+      <Button
+        onClick={openModal}
+        className={s.cardBtn}
+        text={<span>Зареєструватись</span>}
+      />
     </div>
   );
 }
