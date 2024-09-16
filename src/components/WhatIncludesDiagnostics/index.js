@@ -8,13 +8,13 @@ import logo from '../../images/logo.png';
 import s from './index.module.css';
 import SectionFooter from '../SectionFooter';
 
-export default function WhatIncludesDiagnostics({ theme }) {
+export default function WhatIncludesDiagnostics({ theme, openModal }) {
   console.log(theme);
 
   return (
     <>
       <div className={classNames('container', s.wrapper)}>
-        <CardPrice theme="light" />
+        <CardPrice openModal={openModal} theme="light" />
         <div className={s.generalWrapper}>
           <div className={s.titleWrapper}>
             <h2 className={s.title}>Що включає діагностика: </h2>
@@ -53,12 +53,3 @@ export default function WhatIncludesDiagnostics({ theme }) {
     </>
   );
 }
-
-// Аналіз вашого стану:
-
-// Оцінка емоційного, фізіологічного та психологічного стану здоровʼя
-// Визначення проблемних зон в житті
-
-// Конкретні кроки та поради для покращення вашого стану і змін в житті
-// Виявлення основних причин ваших труднощів
-// Визначення актуальних патернів і установок у вашому мисленні

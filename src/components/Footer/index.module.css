@@ -69,3 +69,12 @@
     width: 100%;
   }
 }
+
+@media screen and (width <= 480px) {
+  .footerSpan {
+    white-space: wrap;
+  }
+  .links {
+    gap: 27px;
+  }
+}

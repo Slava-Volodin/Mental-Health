@@ -43,3 +43,9 @@
     width: 339px;
   }
 }
+
+@media screen and (width <= 480px) {
+  .card {
+    width: 100%;
+  }
+}

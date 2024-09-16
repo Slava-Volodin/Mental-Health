@@ -8,7 +8,7 @@ import { ReactComponent as ArrowDown } from '../../../images/icons/arrowDown.svg
 import logoWhite from '../../../images/hero/logoWhite.png';
 import s from './index.module.css';
 
-export default function HeroFooter() {
+export default function HeroFooter({ openModal }) {
   const { isMobile } = useBreakpoints();
 
   return (
@@ -26,6 +26,7 @@ export default function HeroFooter() {
               <ArrowDown />
               <img alt="logo_white" src={logoWhite} />
               <Button
+                onClick={openModal}
                 className={s.btnSignUp}
                 text={<span>Зареєстуватись</span>}
               />

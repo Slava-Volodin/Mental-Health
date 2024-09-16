@@ -14,7 +14,11 @@
   width: 100%;
 }
 .textWrapper {
-  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-bottom: 50px;
   flex-basis: 50%;
 }
 .textWrapper span {
@@ -54,6 +58,30 @@ b {
 }
 @media screen and (width <= 768px) {
   .title {
-    font-size: var(--fontSize-m-xs);
+    font-size: var(--fontSize-m);
+  }
+}
+
+@media screen and (width <= 1199px) {
+  .wrapper {
+    justify-content: center;
+  }
+  .textWrapper {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .button {
+    display: none;
+  }
+}
+
+@media screen and (width <= 480px) {
+  .title {
+    font-size: var(--fontSize-s);
+  }
+  .textWrapper span {
+    font-size: var(--fontSize-smaller);
   }
 }
