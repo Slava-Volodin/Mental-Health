@@ -60,6 +60,14 @@ b {
   .title {
     font-size: var(--fontSize-m);
   }
+  .wrapper {
+    flex-basis: 100%;
+    padding-right: 20px;
+  }
+  .textWrapper {
+    width: 100%;
+    flex-basis: 100%;
+  }
 }
 
 @media screen and (width <= 1199px) {
@@ -78,9 +86,6 @@ b {
 }
 
 @media screen and (width <= 480px) {
-  .title {
-    font-size: var(--fontSize-s);
-  }
   .textWrapper span {
     font-size: var(--fontSize-smaller);
   }

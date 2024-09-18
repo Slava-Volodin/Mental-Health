@@ -151,6 +151,9 @@
   .titlesWrapper {
     width: fit-content;
   }
+  .photo {
+    width: 85%;
+  }
 }
 
 @media screen and (width <= 1040px) {

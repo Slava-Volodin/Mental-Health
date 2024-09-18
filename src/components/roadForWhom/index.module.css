@@ -257,7 +257,7 @@
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 24px;
-    padding-top: 0;
+    /* padding-top: 0; */
     position: relative;
     z-index: 1;
   }

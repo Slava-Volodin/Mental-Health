@@ -1,17 +1,15 @@
 import React from 'react';
 import classNames from 'classnames';
 import rectangle from '../../images/rectangle.png';
-import family from '../../images/family.png';
+import family from '../../images/mobfamily.jpg';
 import Button from '../Button';
 
 import s from './index.module.css';
-import { useBreakpoints } from '../../utils/hooks/useBreakpoints';
 
 export default function HowItWork({ openModal }) {
-  const { isMobile } = useBreakpoints();
   return (
     <div className={classNames('container', s.wrapper)}>
-      {isMobile && <img className={s.mobPhoto} alt="bg_orange" src={family} />}
+      <img className={s.mobPhoto} alt="bg_orange" src={family} />
       <div className={s.bg}>
         <img className={s.familyPhoto} alt="family_photo" src={rectangle} />
       </div>
