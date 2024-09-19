@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/mental-health/static/css/main.7b40155d.css",
+    "main.js": "/mental-health/static/js/main.0840b2bb.js",
+    "static/media/questionPhoto.png": "/mental-health/static/media/questionPhoto.05ec0ba90eb2e874f3de.png",
+    "static/media/educationPhoto.png": "/mental-health/static/media/educationPhoto.b0100f6457f61c02595d.png",
+    "static/media/rectangle.png": "/mental-health/static/media/rectangle.069ce05a327bf2b018f5.png",
+    "static/media/photoLife.png": "/mental-health/static/media/photoLife.2938c43cc845eada0a5d.png",
+    "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/mental-health/static/media/Montserrat-Italic-VariableFont_wght.ef11b720b9a6cfb9a317.ttf",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/mental-health/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
+    "static/media/photoRoad.png": "/mental-health/static/media/photoRoad.26de6a933732c3aa91e3.png",
+    "static/media/coment4.jpeg": "/mental-health/static/media/coment4.359515602e955848139d.jpeg",
+    "static/media/contactHero.png": "/mental-health/static/media/contactHero.8a32c2e6ca54deb620a6.png",
+    "static/media/photo.png": "/mental-health/static/media/photo.f0d886ab32902d497675.png",
+    "static/media/coment3.jpeg": "/mental-health/static/media/coment3.040cc80e0a3c0d30dca1.jpeg",
+    "static/media/coment1.jpg": "/mental-health/static/media/coment1.d940cb6744a7d41b39f3.jpg",
+    "static/media/family.png": "/mental-health/static/media/family.11f3f7f927a2b6d9ab16.png",
+    "static/media/mobHero.png": "/mental-health/static/media/mobHero.9fd3627d135760edab66.png",
+    "static/media/coment5.jpeg": "/mental-health/static/media/coment5.caf9f85a393cf36424bc.jpeg",
+    "static/media/coment2.jpeg": "/mental-health/static/media/coment2.d5237cab59207132234b.jpeg",
+    "static/media/Bebas_Neue_Cyrillic.ttf": "/mental-health/static/media/Bebas_Neue_Cyrillic.f39fe92d35bac3b2fe60.ttf",
+    "static/media/mobPhoto.png": "/mental-health/static/media/mobPhoto.97a6409960efbb7c93d9.png",
+    "static/media/roadtohappyness.png": "/mental-health/static/media/roadtohappyness.5bbfba3d8ea09c98c8b9.png",
+    "static/media/logoWhite.png": "/mental-health/static/media/logoWhite.d71984d6824495d077ff.png",
+    "static/media/mental.png": "/mental-health/static/media/mental.6e5963d200d479fc9005.png",
+    "static/media/contactImg.png": "/mental-health/static/media/contactImg.467809ffa9e7a351f1c7.png",
+    "static/media/mind.png": "/mental-health/static/media/mind.cfbeeac5a84aa688d884.png",
+    "static/media/arrowDown.svg": "/mental-health/static/media/arrowDown.c13f4c140ca94686d6c1977a5a5c457e.svg",
+    "static/media/mentalHealth.svg": "/mental-health/static/media/mentalHealth.7c5bc010ef4af77ce63243b7ab53acc1.svg",
+    "index.html": "/mental-health/index.html",
+    "static/media/arrow.svg": "/mental-health/static/media/arrow.38c8578cbc845ba75409c9a5c701cc1c.svg",
+    "main.7b40155d.css.map": "/mental-health/static/css/main.7b40155d.css.map",
+    "main.0840b2bb.js.map": "/mental-health/static/js/main.0840b2bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b40155d.css",
+    "static/js/main.0840b2bb.js"
+  ]
+}

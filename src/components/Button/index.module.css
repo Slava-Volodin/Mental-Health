@@ -1,9 +1,0 @@
-.button {
-  background-color: var(--orange);
-  padding: 16px 36px;
-  color: var(--btn-text-color);
-  line-height: 32px;
-  font-size: 32px;
-  letter-spacing: 2px;
-  font-family: var(--fontFamilyBebas);
-}
