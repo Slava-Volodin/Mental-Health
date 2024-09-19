@@ -1,6 +1,7 @@
 {
   "name": "mental_health",
   "version": "0.1.0",
+  "private": false,
   "homepage": "https://slava-volodin.github.io/Mental-Health",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
