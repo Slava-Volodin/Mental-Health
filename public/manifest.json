@@ -29,14 +29,14 @@
       "sizes": "640x320",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Mental Heals"
+      "label": "Mental Health"
     },
     {
       "src": "mental.png",
       "sizes": "640x320",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "Mental Heals"
+      "label": "Mental Health"
     }
   ],
   "orientation": "any",
