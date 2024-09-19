@@ -9,8 +9,6 @@ export default function QuestionCard({
   title,
   id,
 }) {
-  console.log(isOpen, description, id);
-
   return (
     <li className={s.wrapper}>
       <div onClick={() => handleClick(id)} className={s.titleWrapper}>

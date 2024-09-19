@@ -9,8 +9,6 @@ import s from './index.module.css';
 import SectionFooter from '../SectionFooter';
 
 export default function WhatIncludesDiagnostics({ theme, openModal }) {
-  console.log(theme);
-
   return (
     <>
       <div className={classNames('container', s.wrapper)}>

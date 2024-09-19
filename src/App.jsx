@@ -25,8 +25,6 @@ function App() {
   const [isModalOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
-    console.log('click');
-
     setIsOpen((prev) => !prev);
   };
 

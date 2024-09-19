@@ -9,8 +9,6 @@ import s from './index.module.css';
 // import s from './index.module.css';
 
 export default function Action({ theme, openModal }) {
-  console.log(theme);
-
   return (
     <div
       className={classNames('container', s.actionWrapper, {
