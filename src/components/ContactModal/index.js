@@ -46,7 +46,7 @@ export default function ContactModal({ onClose }) {
         </div>
       </div>
       <button onClick={onClose} type="button" className={s.closeBtn}>
-        <img src={closeBtn} />
+        <img alt="close_icon" src={closeBtn} />
       </button>
     </div>
   );

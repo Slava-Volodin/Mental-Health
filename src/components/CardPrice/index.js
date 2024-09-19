@@ -10,12 +10,16 @@ import classNames from 'classnames/bind';
 export default function CardPrice({ theme, openModal }) {
   return (
     <div className={classNames(s.card, { [s[theme]]: theme })}>
-      {theme === 'light' && <img className={s.cardPrice} src={moneyBlack} />}
+      {theme === 'light' && (
+        <img alt="money_icon" className={s.cardPrice} src={moneyBlack} />
+      )}
       <span className={s.cardTitle}>
         ПРИЄДНУЙТЕСЬ ДО Діагностики з психологом Костюком Максимом, ВЖЕ ЗАРАЗ,
         ЗА СПЕЦІАЛЬНОЮ та ОБМЕЖЕНОЮ У ЧАСІ ПРОПОЗИЦІЄЮ
       </span>
-      {theme !== 'light' && <img className={s.cardPrice} src={money} />}
+      {theme !== 'light' && (
+        <img alt="money_icon" className={s.cardPrice} src={money} />
+      )}
       <Button
         onClick={openModal}
         className={s.cardBtn}

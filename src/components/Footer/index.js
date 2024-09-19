@@ -17,7 +17,7 @@ export default function Footer({ openModal }) {
         {!isMobile && (
           <>
             <div className={s.footerTitle}>
-              <img src={mental} />
+              <img alt="logo_icon" src={mental} />
             </div>
             <Links />
           </>
@@ -33,7 +33,7 @@ export default function Footer({ openModal }) {
           </div>
           {isMobile && (
             <div className={s.footerTitleMob}>
-              <img src={mental} />
+              <img alt="logo_icon" src={mental} />
             </div>
           )}
           <Links />

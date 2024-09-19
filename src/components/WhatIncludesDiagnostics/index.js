@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-import Timer from '../Timer';
 
 import CardPrice from '../../components/CardPrice';
 import logo from '../../images/logo.png';

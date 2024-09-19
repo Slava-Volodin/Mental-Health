@@ -29,7 +29,11 @@ export default function Carousel() {
         <Slider moveThreshold={20} className={s.wrapperSlides}>
           {slides.map((item, idx) => (
             <Slide className={s.imgWrapper} index={idx} key={idx}>
-              <img className={s.carouselImg} src={item} />
+              <img
+                alt={`carousel_icon_${idx}`}
+                className={s.carouselImg}
+                src={item}
+              />
             </Slide>
           ))}
         </Slider>

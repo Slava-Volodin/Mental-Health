@@ -41,7 +41,7 @@ export default function IndividualApproach({ openModal }) {
       </div>
       {isDesktop && (
         <div className={s.photoWrapper}>
-          <img alt="photo" src={photoLife} />
+          <img alt="photo_icon" src={photoLife} />
           <img className={s.lifeIcon} alt="photo_bg" src={life} />
 
           <div className={s.yearWrapper}>

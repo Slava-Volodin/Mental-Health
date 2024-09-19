@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import s from './index.module.css';
 
-export default function () {
+export default function Reviews() {
   return (
     <div className={classNames('container', s.revWrapper)}>
       <div className={s.titleWrapper}>
