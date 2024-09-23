@@ -29,7 +29,7 @@ export default function IndividualApproach({ openModal }) {
           <b>Професійність: </b>Ваша інформація залишиться приватною та
           захищеною
         </span>
-        <span className={s.bold}>
+        <span className={classNames(s.bold, s.doNotStop)}>
           Не зволікайте, зробіть перший крок до покращення свого життя вже
           сьогодні!
         </span>

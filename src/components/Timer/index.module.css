@@ -26,14 +26,7 @@ h3.timerTitle {
   font-weight: var(--fontWeight-xl);
   font-family: var(--fontFamilyMontserrat);
 }
-/* .timerNumber::after {
-  content: '';
-  display: block;
-  width: 240px;
-  height: 148px;
-  position: absolute;
-  background-color: var(--orange);
-} */
+
 .timerDescription {
   font-size: var(--fontSize-xxs);
   font-family: var(--fontFamilyMontserrat);
@@ -64,16 +57,29 @@ h3.timerTitle {
   .timerGroup {
     gap: 10px;
   }
+  .timerDescription,
+  .timerSubDescription {
+    font-size: 22px;
+    font-weight: 900;
+  }
 }
 
 @media screen and (width <= 1240px) {
   .timerWrapper {
     align-items: center;
     gap: 15px;
+    width: 100%;
   }
 }
-
-@media screen and (width <= 480px) {
+@media screen and (width <= 768px) {
+  .timerNumber {
+    border-radius: 22px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 66px;
+  }
+}
+@media screen and (width <= 320px) {
   .timerNumber {
     font-size: var(--fontSize-m);
     width: 100px;

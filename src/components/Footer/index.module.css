@@ -78,3 +78,8 @@
     gap: 27px;
   }
 }
+@media screen and (orientation: landscape) {
+  .footerSpan {
+    margin-top: 20px;
+  }
+}

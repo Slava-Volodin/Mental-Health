@@ -12,11 +12,13 @@
 .imgSide {
   position: relative;
 }
-
+.titlesWrapper {
+  width: fit-content;
+}
 /* ||  Text Side */
 
 .infoSide {
-  flex-basis: 45%;
+  padding-top: 2%;
 }
 
 .title {
@@ -131,7 +133,7 @@
   margin: 0 auto;
   position: relative;
   z-index: 1;
-  width: 100%;
+  width: 72%;
   height: auto;
 }
 
@@ -146,10 +148,13 @@
     font-size: clamp(16px, 4vw, 22px);
   }
   .btnSignUpDesktop {
-    margin-top: 18%;
+    margin-top: 5%;
   }
   .titlesWrapper {
     width: fit-content;
+  }
+  .photo {
+    width: 100%;
   }
 }
 
@@ -182,15 +187,9 @@
   }
 }
 
-@media screen and (width <= 768px) {
-  .heroContainer {
-    padding-left: 0;
-    flex-direction: column;
-    padding-top: 100px;
-    gap: 20px;
-  }
+@media screen and (width <= 768px) and (orientation: portrait) {
   .textContainer {
-    max-width: unset;
+    width: unset;
   }
   .titlesWrapper {
     margin-left: auto;
@@ -205,7 +204,7 @@
 
   .imgSide {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 75px;
   }
   .infoTitle {
     line-height: 20px;
@@ -240,8 +239,32 @@
   }
 }
 
-@media screen and (width < 768px) {
+@media screen and (width < 768px) and (orientation: portrait) {
   .btnSignUpDesktop {
     display: none;
+  }
+  .heroContainer {
+    padding-left: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (width < 480px) and (orientation: portrait) {
+  .titlesWrapper {
+    margin-left: 0;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .infoTitle {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  .infoTitle::after {
+    top: -10px;
+  }
+  .designTextBg {
+    right: -2%;
+    top: 15%;
   }
 }

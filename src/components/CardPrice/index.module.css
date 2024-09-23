@@ -6,7 +6,7 @@
   border: 2px solid var(--orange);
   border-radius: 45px;
   padding-top: 55px;
-  padding-bottom: 100px;
+  padding-bottom: 96px;
 }
 
 .cardTitle {
@@ -29,6 +29,7 @@
   height: 100%;
   background-color: var(--light);
   color: var(--orange);
+  max-height: 83px;
 }
 .card.light {
   background-color: transparent;
@@ -36,16 +37,15 @@
 .card.light .cardBtn {
   background-color: var(--orange);
   color: var(--light);
+  height: 83px;
 }
 
 @media screen and (width <= 768px) {
   .card {
     width: 339px;
+    padding-bottom: 67px;
   }
-}
-
-@media screen and (width <= 480px) {
-  .card {
-    width: 100%;
+  .cardBtn {
+    max-height: 70px;
   }
 }

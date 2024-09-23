@@ -4,6 +4,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+  overflow-x: hidden;
 }
 .photoContainer {
   position: relative;
@@ -42,6 +43,7 @@
   font-family: var(--fontFamilyBebas);
   text-transform: uppercase;
   margin-bottom: 12px;
+  width: 50%;
 }
 .description {
   font-size: var(--fontSize-xs);
@@ -69,9 +71,13 @@
   .photoContainer,
   .textContainer {
     flex-basis: 48%;
+    height: fit-content;
   }
   .photoContainer::after {
     right: 110px;
+  }
+  .textContainer {
+    padding-bottom: 60px;
   }
 }
 
@@ -87,7 +93,11 @@
 
 /* ||  Mobile */
 
-@media screen and (width < 768px) {
+@media screen and (width <= 768px) {
+  .photoContainer > img {
+    max-height: 600px;
+    width: auto;
+  }
   .photoContainer,
   .textContainer {
     flex-basis: 100%;
@@ -95,28 +105,39 @@
   }
   .textContainer {
     position: relative;
+    padding-bottom: 0;
     padding-left: 25px;
-    padding-bottom: 25px;
   }
   .title {
     position: absolute;
-    top: -250px;
-    max-width: 200px;
+    top: -100px;
     margin-bottom: 0;
-    font-size: clamp(var(--fontSize-smaller), 6vw, var(--fontSize-xxs));
-    font-size: var(--fontSize-xxxl);
+    width: 100%;
+    padding-right: 20px;
+    font-size: var(--fontSize-xxl);
   }
   .description {
     font-size: clamp(var(--fontSize-smaller), 6vw, var(--fontSize-xxs));
     margin-bottom: 80px;
   }
   .titleMob {
-    font-size: var(--fontSize-md);
+    font-size: 88px;
+  }
+  .titleMob ~ span {
+    font-size: 46px;
   }
 }
-
+@media screen and (width <= 620px) {
+  .title {
+    width: 50%;
+    top: -200px;
+  }
+}
 @media screen and (width <= 480px) {
   .title {
     font-size: var(--fontSize-xl);
+  }
+  .description {
+    margin-bottom: 50px;
   }
 }

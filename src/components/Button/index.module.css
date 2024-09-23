@@ -1,9 +1,27 @@
 .button {
-  background-color: var(--orange);
+  background-color: #fc6500;
   padding: 16px 36px;
   color: var(--btn-text-color);
   line-height: 32px;
   font-size: 32px;
   letter-spacing: 2px;
+  max-height: 54px;
   font-family: var(--fontFamilyBebas);
+  transition: opacity 0.3s;
+  opacity: 0.9;
+}
+.button:hover,
+.button:focus {
+  opacity: 1;
+}
+@media screen and (width <= 1200px) {
+  .button {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+@media screen and (width <= 768px) {
+  .button {
+    opacity: 1;
+  }
 }

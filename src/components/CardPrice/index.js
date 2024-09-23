@@ -7,9 +7,14 @@ import moneyBlack from '../../images/moneyBlack.png';
 import s from './index.module.css';
 import classNames from 'classnames/bind';
 
-export default function CardPrice({ theme, openModal }) {
+export default function CardPrice({ theme, openModal, className }) {
   return (
-    <div className={classNames(s.card, { [s[theme]]: theme })}>
+    <div
+      className={classNames(s.card, {
+        [s[theme]]: theme,
+        [className]: className,
+      })}
+    >
       {theme === 'light' && (
         <img alt="money_icon" className={s.cardPrice} src={moneyBlack} />
       )}

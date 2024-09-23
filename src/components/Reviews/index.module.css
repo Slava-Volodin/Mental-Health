@@ -38,6 +38,9 @@
 }
 
 @media screen and (width <= 768px) {
+  .revWrapper {
+    padding-top: 100px;
+  }
   .titleWrapper {
     flex-direction: column;
     gap: 0px;
