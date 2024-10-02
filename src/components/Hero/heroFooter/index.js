@@ -34,6 +34,11 @@ export default function HeroFooter({ openModal }) {
           )}
           {!isMobile && <MentalHealth />}
         </div>
+        <Button
+          onClick={openModal}
+          className={classNames(s.btnSignUp, s.btnSignUpLandscape)}
+          text={<span>Зареєстуватись</span>}
+        />
       </div>
     </div>
   );

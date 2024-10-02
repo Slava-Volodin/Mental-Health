@@ -43,10 +43,11 @@ function App() {
       <Carousel />
       <Sales openModal={handleClick} />
       <Questions openModal={handleClick} />
+
       <Footer openModal={handleClick} />
 
       <Modal isOpen={isModalOpen} onClose={handleClick}>
-        <ContactModal onClose={handleClick} />
+        <ContactModal isOpen={isModalOpen} onClose={handleClick} />
       </Modal>
     </div>
   );

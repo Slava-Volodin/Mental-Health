@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import CardPrice from '../../components/CardPrice';
-import logo from '../../images/logo.png';
+import logo from '../../images/bigLogo.svg';
 
 import s from './index.module.css';
 import SectionFooter from '../SectionFooter';
@@ -11,7 +11,11 @@ export default function WhatIncludesDiagnostics({ theme, openModal }) {
   return (
     <>
       <div className={classNames('container', s.wrapper)}>
-        <CardPrice openModal={openModal} theme="light" />
+        <CardPrice
+          className={s.cardPrice}
+          openModal={openModal}
+          theme="light"
+        />
         <div className={s.generalWrapper}>
           <div className={s.titleWrapper}>
             <h2 className={s.title}>Що включає діагностика: </h2>

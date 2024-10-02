@@ -45,11 +45,10 @@ export default function Timer() {
       </span>
       <span className={s.timerSubDescription}>
         Отримайте професійний аналіз вашого психологічного стану та життя,
-        покроковий план дій якій дасть
+        покроковий план дій якій дасть можливість змінити вашу ситуацію і життя
+        вже сьогодні
       </span>
-      <span className={s.timerDescription}>
-        можливість змінити вашу ситуацію і життя вже сьогодні
-      </span>
+      <span className={s.timerDescription}></span>
     </div>
   );
 }

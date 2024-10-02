@@ -63,6 +63,9 @@
     justify-content: center;
     gap: 40px;
   }
+  .links li > a {
+    opacity: 1;
+  }
 
   .footerSpan {
     font-size: var(--fontSize-smaller);
@@ -76,5 +79,10 @@
   }
   .links {
     gap: 27px;
+  }
+}
+@media screen and (orientation: landscape) {
+  .footerSpan {
+    margin-top: 20px;
   }
 }

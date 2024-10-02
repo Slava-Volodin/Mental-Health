@@ -1,9 +1,32 @@
 .button {
-  background-color: var(--orange);
+  background-color: #fc6500;
   padding: 16px 36px;
   color: var(--btn-text-color);
   line-height: 32px;
   font-size: 32px;
   letter-spacing: 2px;
   font-family: var(--fontFamilyBebas);
+  transition: outline 0.3s;
+  opacity: 0.9;
+  outline: 4px solid transparent;
+}
+
+@media screen and (width >= 768px) {
+  .button:hover,
+  .button:focus {
+    opacity: 1;
+    outline: 4px solid #fc6500;
+  }
+}
+
+@media screen and (width <= 1200px) {
+  .button {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+@media screen and (width <= 768px) {
+  .button {
+    opacity: 1;
+  }
 }

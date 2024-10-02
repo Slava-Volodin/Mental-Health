@@ -25,3 +25,8 @@
     padding-bottom: 38px;
   }
 }
+@media screen and (orientation: landscape) {
+  .actionWrapper {
+    padding-top: 100px;
+  }
+}

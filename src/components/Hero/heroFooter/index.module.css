@@ -9,6 +9,9 @@
   justify-content: space-between;
   max-height: 220px;
 }
+.btnSignUpLandscape {
+  display: none;
+}
 
 .titleHeroFooter {
   font-weight: var(--fontWeight-s);
@@ -39,7 +42,7 @@
   text-align: left;
 }
 
-@media screen and (width <= 768px) {
+@media screen and (width < 768px) {
   .heroFooterContainer {
     flex-direction: column;
     padding-top: 10px;
@@ -76,5 +79,18 @@
 @media screen and (width <= 480px) {
   button.btnSignUp {
     width: 100%;
+  }
+}
+@media screen and (orientation: landscape) {
+  .heroFooterContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .btnFooterContainer {
+    display: none;
+  }
+  .btnSignUpLandscape {
+    display: block;
+    border-radius: 66px;
   }
 }

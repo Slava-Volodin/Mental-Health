@@ -1,14 +1,26 @@
 .contactWrapper {
-  display: flex;
+  position: relative;
   padding: 89px 136px 40px;
   gap: 70px;
   background-image: url(../../images/contactImages/contactHero.png);
   background-repeat: no-repeat;
   background-position: right;
-  background-color: var(--white);
+  overflow: hidden;
   border-radius: 58px;
-  position: relative;
+  display: flex;
+  background-color: var(--white);
+  margin: auto;
   box-shadow: 0px 0px 80.4px 0px #00000040;
+  color: #333333;
+  top: -100%;
+  opacity: 0;
+  transition:
+    top 0.7s,
+    opacity 0.3s;
+}
+.show {
+  top: 0;
+  opacity: 1;
 }
 
 .formWrapper {
@@ -73,6 +85,9 @@
     width: 100%;
     padding-left: 46px;
     gap: 40px;
+  }
+  .contactWrapper input {
+    height: 67px;
   }
 }
 

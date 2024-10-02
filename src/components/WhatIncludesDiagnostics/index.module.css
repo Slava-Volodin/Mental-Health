@@ -1,11 +1,14 @@
 .wrapper {
-  padding: 12px;
   display: flex;
-  gap: 81px;
+  padding-top: 54px;
+  gap: 80px;
+}
+.cardPrice {
+  max-height: 542px;
 }
 .logoWrapper {
   display: block;
-  flex-basis: 70%;
+  flex-basis: 50%;
 }
 .logoWrapper > img {
   width: 100%;
@@ -13,10 +16,14 @@
 .titleWrapper {
   display: flex;
   gap: 16px;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .title {
   display: block;
-  flex-basis: 30%;
+  flex-basis: 50%;
+  max-width: 34%;
+  font-size: clamp(60px, 10vw, 72px);
 }
 
 .generalWrapper {
@@ -66,36 +73,58 @@
 }
 
 .descriptionWrapper > ul {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .spanWrapper {
   margin-top: 15px;
 }
-
+@media screen and (width > 907px) {
+  .wrapper {
+    padding-left: 80px;
+  }
+}
 @media screen and (width <= 1204px) {
   .wrapper {
-    flex-direction: column;
-    align-items: center;
+    gap: 40px;
+    padding-bottom: 24px;
   }
   .logoWrapper {
     display: none;
   }
   .title {
+    font-size: 36px;
     display: block;
     flex-basis: 100%;
+    max-width: unset;
+    margin-bottom: 20px;
+  }
+  .descriptionTitle,
+  .descriptionText {
+    font-size: 18px;
+    margin-bottom: 5px;
   }
 }
 
 @media screen and (width <= 907px) {
-  .title {
-    font-size: var(--fontSize-m);
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 67px;
+    padding-bottom: 80px;
   }
+
   .generalWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .title {
+    margin-bottom: 40px;
+  }
+  .titleWrapper {
+    margin-right: auto;
   }
 }
 
