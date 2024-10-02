@@ -5,17 +5,26 @@ import { useBreakpoints } from '../../utils/hooks/useBreakpoints';
 import Button from '../Button';
 import SectionFooter from '../SectionFooter';
 
-import { ReactComponent as Shadow } from '../../images/icons/shadow.svg';
 import photo from '../../images/road/photoRoad.png';
 import mobPhoto from '../../images/mobPhoto.png';
 import s from './index.module.css';
 
 export default function RoadForWhom({ openModal }) {
   const { isMobile } = useBreakpoints();
+
   const list = [
-    'Для кожного хто розуміє як його психологічний стан впливає на результати в житті зараз.',
-    'Хто відчуває дискомфорт в житті, має певні проблеми і прагне їх вирішити.',
-    'Для тих хто прагне розвитку своєї особистості , покращення себе і свого рівня життя.',
+    <span>
+      Для кожного <b>хто розуміє</b> як його психологічний стан впливає на
+      результати в житті зараз.
+    </span>,
+    <span>
+      <b>Хто відчуває</b> дискомфорт в житті, має певні проблеми і прагне їх
+      вирішити.
+    </span>,
+    <span>
+      Для тих <b>хто прагне</b> розвитку своєї особистості , покращення себе і
+      свого рівня життя.
+    </span>,
   ];
 
   const PhotoComponent = () => {
@@ -29,9 +38,6 @@ export default function RoadForWhom({ openModal }) {
                 className={s.photo}
                 src={mobPhoto}
               />
-              <div className={s.shadow}>
-                <Shadow />
-              </div>
             </div>
           </>
         ) : (
@@ -51,12 +57,15 @@ export default function RoadForWhom({ openModal }) {
           </>
         )}
         <span className={s.description}>
-          Розумієте що ваш психологічний стан і життя може бути кращим ніж
-          зараз? Потребуєте професійної допомоги, щоб розібратися у своїх
+          <b>Розумієте</b> що ваш психологічний стан і життя може бути кращим
+          ніж зараз?
+        </span>
+        <span className={s.description}>
+          <b>Потребуєте</b> професійної допомоги, щоб розібратися у своїх
           емоціях та думках?
         </span>
         <span className={s.toGetTitle}>
-          Отримайте безкоштовну діагностику від досвідченого
+          <b>Отримайте</b> безкоштовну діагностику від досвідченого
         </span>
         <span className={s.name}>психолога Костюка Максима</span>
 

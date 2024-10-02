@@ -61,7 +61,8 @@ h3.timerTitle {
   }
   .timerNumber {
     font-size: var(--fontSize-md);
-    width: 122px;
+    max-width: 100px;
+    width: 100%;
   }
   .timerGroup {
     gap: 10px;
@@ -86,6 +87,10 @@ h3.timerTitle {
     padding-left: 14px;
     padding-right: 14px;
     font-size: 66px;
+  }
+  .timerDescription,
+  .timerSubDescription {
+    text-align: left;
   }
 }
 @media screen and (width <= 320px) {

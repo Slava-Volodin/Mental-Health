@@ -63,6 +63,9 @@
     justify-content: center;
     gap: 40px;
   }
+  .links li > a {
+    opacity: 1;
+  }
 
   .footerSpan {
     font-size: var(--fontSize-smaller);

@@ -38,7 +38,7 @@
   display: block;
   transform: translate(0, -25px);
   font-family: var(--fontFamilyMontserrat);
-  font-size: clamp(var(--fontSize-s), 4vw, var(--fontSize-m-xs));
+  font-size: clamp(var(--fontSize-xs), 4vw, var(--fontSize-m-xs));
 }
 .textContainer {
   max-width: 390px;
@@ -68,7 +68,7 @@
 
 .heroText {
   font-size: 20px;
-  font-size: clamp(16px, 4vw, 22px);
+  font-size: clamp(14px, 4vw, 22px);
   line-height: 26.82px;
   display: inline-block;
   position: relative;
@@ -210,7 +210,7 @@
     line-height: 20px;
     padding-top: 24px;
     padding-right: 50px;
-    font-size: clamp(16px, 3vw, 22px);
+    font-size: clamp(14px, 3vw, 22px);
   }
   .infoTitle::after {
     width: 40px;

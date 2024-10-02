@@ -50,13 +50,7 @@
 .imgWrapperMob {
   position: relative;
 }
-.shadow {
-  position: absolute;
-  width: 100%;
-}
-.shadow rect {
-  width: 100%;
-}
+
 .list {
   padding-left: 50px;
 }
@@ -129,6 +123,7 @@
   font-family: var(--fontFamilyBebas);
 }
 .description {
+  display: block;
   font-size: var(--fontSize-s);
   font-weight: var(--fontWeight-s);
   font-family: var(--fontFamilyMontserrat);
@@ -201,14 +196,14 @@
   .description,
   .toGetTitle,
   .name {
-    font-size: 22px;
+    font-size: 20px;
   }
   .subtitle,
   .title {
     font-size: var(--fontSize-l);
   }
   .list li {
-    font-size: 22px;
+    font-size: 20px;
   }
   .photo {
     transform: translate(-50%, 0);
@@ -254,6 +249,7 @@
   .leftSide {
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 25px;
   }
   .description,
   .name {
@@ -275,7 +271,6 @@
     height: auto;
     position: static;
     left: 0;
-    padding-left: 20px;
   }
   .list {
     padding-right: 25px;
@@ -307,7 +302,7 @@
   }
   .roadForWhomFooter > span {
     /* TODO add font size */
-    font-size: 36px;
+    font-size: 30px;
     color: var(--orange);
     font-family: var(--fontFamilyMontserrat);
     /* TODO add font weight */
@@ -362,7 +357,7 @@
   .description,
   .toGetTitle,
   .name {
-    font-size: 22px;
+    font-size: 18px;
   }
   .toGetTitle {
     margin-top: 20px;
